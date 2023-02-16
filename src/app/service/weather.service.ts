@@ -32,6 +32,6 @@ interface getResponse {
     lat: number,
     lon: number,
     tz_id: string,
-    localtime: string
+    localtime: string,
 },
 }
