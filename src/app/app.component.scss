@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-} 
+}
 
-.container{
+.container {
   width: 400px;
   height: 80vh;
   background-color: var(--pink);
@@ -11,16 +11,16 @@
   box-shadow: 10px 10px 10px 10px var(--shadow-dark);
 }
 
-.upper-data{
+.upper-data {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 50%;
-  border-top-right-radius:  20px;
+  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.lower-data{
+.lower-data {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -32,15 +32,15 @@
   flex-direction: column;
 }
 
-  .upper-data img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.upper-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.weather-data{
+.weather-data {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -52,25 +52,25 @@
   justify-content: center;
 }
 
-.location{
+.location {
   color: white;
   text-align: center;
   font-size: 1.2em;
 }
 
-.temperature{
+.temperature {
   color: white;
   text-align: center;
   font-size: 4em;
   font-weight: 900;
 }
 
-.more-info-label{
+.more-info-label {
   color: white;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
-.more-info-container{
+.more-info-container {
   flex: 1;
   background-color: var(--shadow-dark);
   border-bottom-left-radius: 20px;
@@ -81,13 +81,13 @@
   flex-wrap: wrap;
 }
 
-.info-block{
+.info-block {
   width: 50%;
   display: flex;
   flex-direction: row;
 }
 
-.info-block-label{
+.info-block-label {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -95,32 +95,33 @@
   align-items: center;
 }
 
-.info-block-label img{
+.info-block-label img {
   width: 1.3em;
 }
 
-.info-block-label span{
+.info-block-label span {
   color: white;
   font-size: 0.8em;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
-.info-block-value{
+.info-block-value {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: white;
   margin-left: -10px;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
-.search{
+.search {
   margin-bottom: 1em;
   text-align: center;
+  width: 100%;
 }
 
-.search input{
+.search input {
   background-color: var(--shadow-dark);
   outline: none;
   border: none;
@@ -131,7 +132,7 @@
   text-align: center;
 }
 
-.search button{
+.search button {
   background-color: black;
   color: white;
   border: none;
@@ -142,13 +143,22 @@
   text-align: center;
 }
 
-@media screen and (max-width:900px) {
-  .container{
-width: 100%;
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .search input {
+    width: 50%;
   }
 
-  h4{
-    font-size: 10px;
+  .search button {
+    margin-left: 5px;
+  }
+
+  h4 {
+    font-size: 7px;
     text-align: center;
   }
 }
