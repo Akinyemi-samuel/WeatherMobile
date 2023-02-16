@@ -10,7 +10,7 @@ export class WeatherService {
   constructor(private http: HttpClient) {}
 
   getwWeatherData(location: string) {
-    const weatherUrl = `http://api.weatherapi.com/v1/current.json?key=09cddf36bace4e7cb9a193609231102&q=${location}&aqi=no`;
+    const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=09cddf36bace4e7cb9a193609231102&q=${location}&aqi=no`;
     return this.http.get<getResponse>(weatherUrl);
   }
 }
